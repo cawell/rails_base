@@ -28,3 +28,21 @@ POSTGRES_PASSWORD=password
 POSTGRES_USER=postgres_user
 POSTGRES_DB=name_database
 ```
+
+To build the project locally:
+
+```zsh
+docker-compose build
+```
+
+Starting application:
+
+```zsh
+docker-compose up -d
+```
+
+Configuring application database:
+
+```zsh
+docker-compose run web rails db:create db:migrate
+```

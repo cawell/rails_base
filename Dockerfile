@@ -16,6 +16,12 @@ RUN echo "America/Sao_Paulo" > /etc/timezone && \
   dpkg-reconfigure --frontend=noninteractive locales && \
   update-locale LANG=pt_BR.UTF-8
 
+ENV LC_ALL=pt_BR.UTF-8
+ENV LANG=pt_BR.UTF-8
+ENV LANGUAGE=pt_BR.UTF-8
+ENV TZ America/Sao_Paulo
+ENV TIME_ZONE Brasilia
+
 COPY Gemfile /www/rails_base/Gemfile
 COPY Gemfile.lock /www/rails_base/Gemfile.lock
 
