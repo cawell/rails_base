@@ -1,0 +1,20 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "bin/**/*"
+    - "vendor/**/*"
+    - "config/**/*"
+
+Style/AsciiComments:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
