@@ -69,6 +69,7 @@ GEM
     ast (2.4.2)
     bootsnap (1.10.3)
       msgpack (~> 1.2)
+    brakeman (5.2.1)
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
@@ -186,6 +187,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  brakeman
   debug
   pg (~> 1.1)
   puma (~> 5.0)
