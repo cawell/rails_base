@@ -4,6 +4,8 @@ AllCops:
     - "bin/**/*"
     - "vendor/**/*"
     - "config/**/*"
+    - "db/migrate/*"
+    - "db/schema.rb"
 
 Style/AsciiComments:
   Enabled: true
