@@ -4,7 +4,7 @@ services:
   database:
     image: postgres:${POSTGRES_VERSION:-14-alpine}
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
       - database_data:/var/lib/postgresql/data
     environment:
@@ -17,7 +17,7 @@ services:
     volumes:
       - .:/www/rails_base
     ports:
-      - 80:3000
+      - "80:3000"
     depends_on:
       - database
 
