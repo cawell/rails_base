@@ -15,7 +15,7 @@ before_install:
 
 before_script:
   - psql -c 'create database rails_base_test;' -U postgres
-  - bin/rails db:migrate
+  - bin/rails db:migrate RAILS_ENV=test
 
 script:
   - bundle exec rails test
