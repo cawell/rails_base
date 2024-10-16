@@ -1,4 +1,4 @@
-FROM ruby:3.3.0
+FROM ruby:3.2.0
 
 WORKDIR /www/rails_base
 
