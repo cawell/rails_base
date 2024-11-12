@@ -1,5 +1,6 @@
 module Webhooks
   class PipedriveController < ApplicationController
+    include ActionController::HttpAuthentication::Basic::ControllerMethods
     before_action :authenticate_pipedrive
 
     def receive
